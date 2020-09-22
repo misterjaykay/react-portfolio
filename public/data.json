@@ -2,35 +2,43 @@
     "portfolio": [
         {
             "name": "Team Profile Generator",
-            "url": "https://github.com/misterjaykay/team-profile-generator"
+            "url": "https://github.com/misterjaykay/team-profile-generator",
+            "img": "./images/team-profile-card.jpg"
         },
         {
             "name": "Password Generator",
-            "url": "https://github.com/misterjaykay/password-generator"
+            "url": "https://github.com/misterjaykay/password-generator",
+            "img": "./images/password-gen.png"
         },
         {
             "name": "Note Taker",
-            "url": "https://github.com/misterjaykay/note-taker"
+            "url": "https://github.com/misterjaykay/note-taker",
+            "img": "./images/note-img.jfif"
         },
         {
             "name": "Readme Generator",
-            "url": "https://github.com/misterjaykay/good-readme-creator"
+            "url": "https://github.com/misterjaykay/good-readme-creator",
+            "img": "./images/readme-img.png"
         },
         {
             "name": "Work Day Scheduler",
-            "url": "https://github.com/misterjaykay/work-day-scheduler"
+            "url": "https://github.com/misterjaykay/work-day-scheduler",
+            "img": "./images/workday.png"
         },
         {
             "name": "Weather Dashboard",
-            "url": "https://github.com/misterjaykay/weather-dashboard"
+            "url": "https://github.com/misterjaykay/weather-dashboard",
+            "img": "./images/weather.png"
         },
         {
             "name": "Timed Quiz",
-            "url": "https://github.com/misterjaykay/speed-quiz"
+            "url": "https://github.com/misterjaykay/speed-quiz",
+            "img": "./images/quiz.png"
         },
         {
             "name": "Refactor Code",
-            "url": "https://github.com/misterjaykay/code-refactor"
+            "url": "https://github.com/misterjaykay/code-refactor",
+            "img": "./images/refactor-code.jpg"
         }
     ],
     "project": [

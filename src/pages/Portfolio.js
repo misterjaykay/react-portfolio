@@ -1,20 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from '../components/Container';
 import Row from '../components/Row';
 import Col from '../components/Col';
 import Card from '../components/Card';
-import CardContext from '../utils/CardContext';
+import axios from "axios";
 
 export default function Portfolio() {
-    
-    const [articleState, setArticleState] = useState({
-        title: "Team Profile Generator",
-        url: "https://github.com/misterjaykay/team-profile-generator",
-        img: "https://i.imgur.com/wc7zNlQ.jpg"
-      });
+    const [work, setWork] = useState([]);
+    const [doneProj, setDoneProj] = useState([]);
+    const [workingProj, setWorkingProj] = useState([]);
 
+    useEffect(() => {
+        axios.get("./data.json")
+        .then(res => {
+            setWork(res.data.portfolio)
+            console.log(res.data)
+            console.log(work)
+        })
+        .catch(err => console.log('error',err));
+    },[])
+    
+    // console.log(cardState);
     return (
-        <CardContext.Provider value={articleState}>
         <Container>
             <Row>
                 <Col
@@ -23,15 +30,14 @@ export default function Portfolio() {
                 >
                     <Row>
                         <Col
-                        size="md-6"
+                        size="md-8"
                         attr="my-3"
-                        >
-                            <Card />
+                        >      
+                            <Card value={work}/>
                         </Col>
                     </Row>
                 </Col>
             </Row>
         </Container>
-        </CardContext.Provider>
     )
 }
