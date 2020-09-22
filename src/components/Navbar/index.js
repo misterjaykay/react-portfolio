@@ -20,7 +20,7 @@ export default function Navbar(props) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/"
+            <Link to="/portfolio"
               className={
                 window.location.pathname === "/portfolio"  ? "nav-link active"  : "nav-link"}
             >
@@ -28,7 +28,7 @@ export default function Navbar(props) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/"
+            <Link to="/project"
               className={
                 window.location.pathname === "/project"  ? "nav-link active"  : "nav-link"}
             >
@@ -36,7 +36,7 @@ export default function Navbar(props) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/"
+            <Link to="/contact"
               className={
                 window.location.pathname === "/contact"  ? "nav-link active"  : "nav-link"}
             >
