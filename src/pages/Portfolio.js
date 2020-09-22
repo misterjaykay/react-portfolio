@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { Link, Route } from "react-router-dom";
 import Container from '../components/Container';
 import Row from '../components/Row';
 import Col from '../components/Col';
 import Card from '../components/Card';
 import axios from "axios";
+import Project from './Project';
 
-export default function Portfolio() {
+export default function Portfolio(props) {
     const [work, setWork] = useState([]);
-    const [doneProj, setDoneProj] = useState([]);
-    const [workingProj, setWorkingProj] = useState([]);
 
     useEffect(() => {
         axios.get("./data.json")
@@ -28,6 +28,10 @@ export default function Portfolio() {
                 size="lg-8 md-12"
                 attr="border rounded py-4 bg-light text-center"
                 >
+                    {/* <Link to={`${props.match.url}/project`} role="button" className="btn btn-link">
+                        See My Projects
+                    </Link>{" "}
+                    <Route exact path={`${props.match.url}/project`} component={Project} /> */}
                     <Row>
                         <Col
                         size="md-8"

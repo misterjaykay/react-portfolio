@@ -7,15 +7,15 @@ function Card(props) {
   return (
     <>
       {props.value.map((res) => (
-        <div class="card">
+        <div className="card">
           <img
             src={res.img}
-            class="card-img-top"
+            className="card-img-top"
             alt={res.name}
           />
-          <div class="card-body">
+          <div className="card-body">
             <a href={res.url}>
-              <p class="card-text">{res.name}</p>
+              <button className="btn btn-primary">{res.name}</button>
             </a>
           </div>
         </div>

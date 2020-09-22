@@ -47,12 +47,14 @@
                 {
                     "name": "Stock Watch",
                     "deploy": "https://misterjaykay.github.io/Project-1/",
-                    "url": "https://github.com/misterjaykay/Project-1"
+                    "url": "https://github.com/misterjaykay/Project-1",
+                    "img": "./images/project-1-logo-rev.png"
                 },
                 {
                     "name": "Local Grub",
                     "deploy": "https://localgrub.herokuapp.com/",
-                    "url": "https://github.com/eplatvoet/localgrub"
+                    "url": "https://github.com/eplatvoet/localgrub",
+                    "img": "./images/localgrublogo-rev.png"
                 }
             ]
         },
@@ -60,11 +62,13 @@
             "working": [
                 {
                     "name": "Discord Bot",
-                    "url": "https://github.com/misterjaykay/simple-discord-bot"
+                    "url": "https://github.com/misterjaykay/simple-discord-bot",
+                    "img": "./images/discord-logo.png"
                 },
                 {
                     "name": "Socket.io",
-                    "url": "https://github.com/misterjaykay/socket-io"
+                    "url": "https://github.com/misterjaykay/socket-io",
+                    "img": "./images/chat-icon.png"
                 }
             ]
         }
