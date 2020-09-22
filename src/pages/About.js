@@ -16,7 +16,7 @@ export default function About() {
                >
                     <Row>
                     <Col size="lg-3 md-6">
-                        <Image url={"https://i.imgur.com/yEd3zVN.jpg"}/>
+                        <Image url={"./images/spongebob.jpg"}/>
                     </Col>
                     <Col size="lg-9 md-6">
                             <Article />

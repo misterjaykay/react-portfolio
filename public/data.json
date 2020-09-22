@@ -1,0 +1,65 @@
+{
+    "portfolio": [
+        {
+            "name": "Team Profile Generator",
+            "url": "https://github.com/misterjaykay/team-profile-generator"
+        },
+        {
+            "name": "Password Generator",
+            "url": "https://github.com/misterjaykay/password-generator"
+        },
+        {
+            "name": "Note Taker",
+            "url": "https://github.com/misterjaykay/note-taker"
+        },
+        {
+            "name": "Readme Generator",
+            "url": "https://github.com/misterjaykay/good-readme-creator"
+        },
+        {
+            "name": "Work Day Scheduler",
+            "url": "https://github.com/misterjaykay/work-day-scheduler"
+        },
+        {
+            "name": "Weather Dashboard",
+            "url": "https://github.com/misterjaykay/weather-dashboard"
+        },
+        {
+            "name": "Timed Quiz",
+            "url": "https://github.com/misterjaykay/speed-quiz"
+        },
+        {
+            "name": "Refactor Code",
+            "url": "https://github.com/misterjaykay/code-refactor"
+        }
+    ],
+    "project": [
+        {
+            "done": [
+                {
+                    "name": "Stock Watch",
+                    "deploy": "https://misterjaykay.github.io/Project-1/",
+                    "url": "https://github.com/misterjaykay/Project-1"
+                },
+                {
+                    "name": "Local Grub",
+                    "deploy": "https://localgrub.herokuapp.com/",
+                    "url": "https://github.com/eplatvoet/localgrub"
+                }
+            ]
+        },
+        {
+            "working": [
+                {
+                    "name": "Discord Bot",
+                    "url": "https://github.com/misterjaykay/simple-discord-bot"
+                },
+                {
+                    "name": "Socket.io",
+                    "url": "https://github.com/misterjaykay/socket-io"
+                }
+            ]
+        }
+    ]
+    
+}

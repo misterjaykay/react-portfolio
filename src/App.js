@@ -7,13 +7,20 @@ import Project from "./pages/Project";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Jumbotron from "./components/Jumbotron";
+import axios from "axios";
 
 function App() {
+  const apiCall = () => {
+    axios.get("./data.json")
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err));
+}
+apiCall()
   return (
     <Router>
       <div>
       <Jumbotron />
-      <Navbar logo="https://i.imgur.com/lIEj005.png"/>
+      <Navbar logo="./images/logo.png"/>
         <Route exact path="/" component={About} />
         <Route exact path="/about" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
