@@ -13,13 +13,11 @@ function App() {
   return (
     <Router>
       <div>
-      <Jumbotron />
       <Navbar logo="./images/logo.png"/>
-        <Route exact path="/" component={About} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/project" component={Project} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path={["/", "/home"]} title={"about"} component={About} />
+        <Route exact path="/portfolio" title={"portfolio"} component={Portfolio} />
+        <Route exact path="/project" title={"project"} component={Project} />
+        <Route exact path="/contact" title={"contact"} component={Contact} />
       <Footer />
       </div>
     </Router>

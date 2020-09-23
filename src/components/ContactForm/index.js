@@ -19,7 +19,7 @@ export default function ContactForm() {
             <div className="col-auto my-1">
               <button type="submit" className="btn btn-primary">Submit</button>
             </div>
-            <div className="my-1 mx-1">
+            <div className="mt-2 mx-1">
               <a className="mailtoui" href="mailto:misterjaykay@gmail.com">or Email Me</a>
             </div>
           </div>

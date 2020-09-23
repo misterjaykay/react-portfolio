@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-light">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
         <img src={props.logo} alt="brand" width="30" height="30" />
         Jonghyun Kang
@@ -11,10 +11,10 @@ export default function Navbar(props) {
       <div>
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link to="/"
+            <Link to="/home"
               className={
                 window.location.pathname === "/" ||
-                window.location.pathname === "/about" ? "nav-link active" : "nav-link"}
+                window.location.pathname === "/home" ? "nav-link active" : "nav-link"}
             >
               Home
             </Link>

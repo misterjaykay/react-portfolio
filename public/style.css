@@ -4,7 +4,7 @@
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   margin-top: auto;
@@ -26,7 +26,7 @@ header {
   border-bottom-width: 1px;
 }
 
-body {
+.jumbotron {
     height: 100%;
     line-height: 1.5;
       background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);

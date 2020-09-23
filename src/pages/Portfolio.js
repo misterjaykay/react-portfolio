@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link, Route } from "react-router-dom";
 import Container from '../components/Container';
 import Row from '../components/Row';
 import Col from '../components/Col';
 import Card from '../components/Card';
 import axios from "axios";
-import Project from './Project';
+import Jumbotron from "../components/Jumbotron";
 
 export default function Portfolio(props) {
     const [work, setWork] = useState([]);
@@ -14,34 +13,43 @@ export default function Portfolio(props) {
         axios.get("./data.json")
         .then(res => {
             setWork(res.data.portfolio)
-            console.log(res.data)
-            console.log(work)
+            // console.log(res.data)
+            // console.log(work)
         })
         .catch(err => console.log('error',err));
     },[])
     
     // console.log(cardState);
     return (
+        <>
+        <Jumbotron title={"Portfolio"} />
         <Container>
             <Row>
                 <Col
                 size="lg-8 md-12"
                 attr="border rounded py-4 bg-light text-center"
                 >
-                    {/* <Link to={`${props.match.url}/project`} role="button" className="btn btn-link">
-                        See My Projects
-                    </Link>{" "}
-                    <Route exact path={`${props.match.url}/project`} component={Project} /> */}
                     <Row>
                         <Col
                         size="md-8"
-                        attr="my-3"
-                        >      
-                            <Card value={work}/>
+                        attr="offset-md-2">
+                            <h2>Portfolio</h2>
+                            <p>Click on each card titles to browse each source code.</p>
+                            <hr />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col
+                        size="md-6"
+                        attr="offset-md-3">
+                            <Card
+                            attr="my-4 border border-dark rounded"
+                            value={work}/>
                         </Col>
                     </Row>
                 </Col>
             </Row>
         </Container>
+        </>
     )
 }

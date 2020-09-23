@@ -6,7 +6,6 @@ export default function Time() {
 
     return(
         <>
-        <h2>Current Time</h2>
         <h4>{localeDate}</h4>
         <h4>{localeTime}</h4>
         </>
