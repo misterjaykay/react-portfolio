@@ -43,7 +43,7 @@
   ## Preview
 
   ### Github Page Links
-  [Click here to view deployed page](https://misterjaykay.github.io/react-portfolio/)
+  [Click here to view deployed page](https://react-portfolio-jhk.herokuapp.com/)
   
   ### Screenshot
   ![Screenshot1](client/public/images/screenshots/one.png)

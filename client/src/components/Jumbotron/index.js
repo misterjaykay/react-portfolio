@@ -17,6 +17,9 @@ export default function Jumbotron(props) {
             case 'Contact':
                 return (<><h1 className="mb-2" >{props.title}</h1>
                         <p>Avenues to get in contact with me.</p></>);
+            case 'Resume':
+                return (<><h1 className="mb-2" >{props.title}</h1>
+                        <p>Where you can check out my experiences</p></>);
             default:
                 return (<h1>Non-existing Page</h1>);
         }

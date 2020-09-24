@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Resume from '../../pages/Resume';
 
 export default function Navbar(props) {
   return (
@@ -33,6 +34,14 @@ export default function Navbar(props) {
                 window.location.pathname === "/project"  ? "nav-link active"  : "nav-link"}
             >
               Project
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/resume"
+              className={
+                window.location.pathname === "/resume"  ? "nav-link active"  : "nav-link"}
+            >
+              Resume
             </Link>
           </li>
           <li className="nav-item">

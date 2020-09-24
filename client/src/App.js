@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Details from "./pages/Details";
 // import Info from './pages/Info';
+import Resume from './pages/Resume';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/portfolio" title={"portfolio"} component={Portfolio} />
           <Route exact path="/project" title={"project"} component={Project} />
           <Route exact path="/contact" title={"contact"} component={Contact} />  
+          <Route exact path="/resume" title={"resume"} component={Resume} />
           <Route path="/portfolio/:id" component={Details} />
         </Switch>
       <Footer />
