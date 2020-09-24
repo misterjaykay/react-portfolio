@@ -7,16 +7,16 @@ export default function Jumbotron(props) {
         switch(title) {
             case 'About Me':
                 return (<><h1 className="mb-2" >{props.title}</h1>
-                        <p>Little about myself.</p></>);
+                        <p>A full stack Developer, covering from Front-end to Back-end.</p></>);
             case 'Portfolio':
                 return (<><h1 className="mb-2" >{props.title}</h1>
-                        <p>Works that I've done.</p></>);
+                        <p>From little lines of code to complicated ones.</p></>);
             case 'Project':
                 return (<><h1 className="mb-2" >{props.title}</h1>
-                        <p>Project that I've done with people.</p></>);
+                        <p>Awesome Challenges that I've done with the fellow mates.</p></>);
             case 'Contact':
                 return (<><h1 className="mb-2" >{props.title}</h1>
-                        <p>Contact me Page</p></>);
+                        <p>Avenues to get in contact with me.</p></>);
             default:
                 return (<h1>Non-existing Page</h1>);
         }

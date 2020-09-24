@@ -1,5 +1,6 @@
 {
-    "portfolio": [
+    "list": 
+    [
         {
             "id": 1,
             "type": "homework",
@@ -55,51 +56,40 @@
             "name": "Refactor Code",
             "url": "https://github.com/misterjaykay/code-refactor",
             "img": "./images/refactor-code.jpg"
-        }
-    ],
-    "project": [
-        {
-            "done": [
-                {
-                    "id": 9,
-                    "type": "project",
-                    "name": "Stock Watch",
-                    "deploy": "https://misterjaykay.github.io/Project-1/",
-                    "url": "https://github.com/misterjaykay/Project-1",
-                    "img": "./images/project-1-logo-rev.png",
-                    "isDone": true
-                },
-                {
-                    "id": 10,
-                    "type": "project",
-                    "name": "Local Grub",
-                    "deploy": "https://localgrub.herokuapp.com/",
-                    "url": "https://github.com/eplatvoet/localgrub",
-                    "img": "./images/localgrublogo-rev.png",
-                    "isDone": true
-                }
-            ]
         },
         {
-            "working": [
-                {
-                    "id": 11,
-                    "type": "project",
-                    "name": "Discord Bot",
-                    "url": "https://github.com/misterjaykay/simple-discord-bot",
-                    "img": "./images/discord-logo.png",
-                    "isDone": false
-                },
-                {
-                    "id": 12,
-                    "type": "project",
-                    "name": "Socket.io",
-                    "url": "https://github.com/misterjaykay/socket-io",
-                    "img": "./images/chat-icon.png",
-                    "isDone": false
-                }
-            ]
+            "id": 9,
+            "type": "project",
+            "name": "Stock Watch",
+            "deploy": "https://misterjaykay.github.io/Project-1/",
+            "url": "https://github.com/misterjaykay/Project-1",
+            "img": "./images/project-1-logo-rev.png",
+            "isDone": true
+        },
+        {
+            "id": 10,
+            "type": "project",
+            "name": "Local Grub",
+            "deploy": "https://localgrub.herokuapp.com/",
+            "url": "https://github.com/eplatvoet/localgrub",
+            "img": "./images/localgrublogo-rev.png",
+            "isDone": true
+        },
+        {
+            "id": 11,
+            "type": "project",
+            "name": "Discord Bot",
+            "url": "https://github.com/misterjaykay/simple-discord-bot",
+            "img": "./images/discord-logo.png",
+            "isDone": false
+        },
+        {
+            "id": 12,
+            "type": "project",
+            "name": "Socket.io",
+            "url": "https://github.com/misterjaykay/socket-io",
+            "img": "./images/chat-icon.png",
+            "isDone": false
         }
     ]
-    
 }

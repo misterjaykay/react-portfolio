@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-sm navbar-light bg-light">
       <Link className="navbar-brand" to="/">
         <img src={props.logo} alt="brand" width="30" height="30" />
         Jonghyun Kang
       </Link>
       <div>
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav margin-left">
           <li className="nav-item">
             <Link to="/home"
               className={

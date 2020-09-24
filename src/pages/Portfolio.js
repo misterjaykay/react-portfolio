@@ -13,28 +13,24 @@ export default function Portfolio(props) {
         axios.get("./data.json")
         .then(res => {
             setWork(res.data.portfolio)
-            // console.log(res.data)
-            // console.log(work)
         })
         .catch(err => console.log('error',err));
     },[])
     
-    // console.log(cardState);
     return (
         <>
         <Jumbotron title={"Portfolio"} />
-        <Container>
+        <Container class={"my-5"}>
             <Row>
                 <Col
                 size="lg-8 md-12"
-                attr="border rounded py-4 bg-light text-center"
-                >
+                attr="py-4 bg-light text-center borderline">
                     <Row>
                         <Col
                         size="md-8"
                         attr="offset-md-2">
                             <h2>Portfolio</h2>
-                            <p>Click on each card titles to browse each source code.</p>
+                            <p>Click on each card buttons to browse each source code.</p>
                             <hr />
                         </Col>
                     </Row>

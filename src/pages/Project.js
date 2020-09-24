@@ -15,9 +15,6 @@ export default function Project() {
         .then(res => {
             setDoneProj(res.data.project[0].done)
             setWorkingProj(res.data.project[1].working)
-
-            console.log(res.data.project[0].done)
-            console.log(doneProj)
         })
         .catch(err => console.log('error',err));
     },[])
@@ -25,11 +22,11 @@ export default function Project() {
     return (
         <>
         <Jumbotron title={"Project"} />
-        <Container>
+        <Container class={"my-5"}>
             <Row>
                 <Col
                 size="lg-8"
-                attr="offset-lg-2 border rounded py-4 bg-light text-center">
+                attr="offset-lg-2 py-4 bg-light text-center borderline">
                     <Row>
                         <Col
                         size="md-6">

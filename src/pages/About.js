@@ -11,11 +11,11 @@ export default function About() {
     return (
         <>
         <Jumbotron title={"About Me"} />
-        <Container>
+        <Container class={"my-5"}>
            <Row>
                <Col 
-               size="lg-8 md-8"
-               attr="border rounded py-4 mr-3 bg-light">
+               size="lg-7 md-7"
+               attr="py-4 mr-3 bg-light borderline">
                     <h2 class="text-center">About Me</h2>
                     <hr />
                     <Row>
@@ -27,11 +27,12 @@ export default function About() {
                     </Col>
                     </Row>
                </Col>
-               <Col size="lg-3 md-3">
+               <Col size="lg-3 md-3"
+                    attr="offset-lg-1 offset-md-1">
                    <Row>
                        <Col 
                        size="lg-12 md-12"
-                       attr="border py-4 mb-3 rounded bg-light text-center">
+                       attr="py-4 mb-3 bg-light text-center borderline">
                            <h2>Current Time</h2>
                            <hr />
                            <Time />
