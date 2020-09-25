@@ -6,7 +6,7 @@
             "name": "Team Profile Generator",
             "url": "https://github.com/misterjaykay/team-profile-generator",
             "img": "./images/team-profile-card.jpg",
-            "screen": "./screenshots/one.png",
+            "screen": "https://github.com/misterjaykay/team-profile-generator/blob/master/assets/screenshot.png?raw=true",
             "desc": "This app allow users to create a HTML page with each team member cards on it User will decide if user wans to add members or not. The team members have following roles : Manager, Engineer, and, Intern. All of members will have infos such as, Name, Id, and E-mail. Each roles have unique info such as, Office Number, Github Account, Graduated School."
         },
         {
@@ -14,42 +14,52 @@
             "type": "homework",
             "name": "Password Generator",
             "url": "https://github.com/misterjaykay/password-generator",
-            "img": "./images/password-gen.png"
+            "screen": "https://github.com/misterjaykay/password-generator/raw/master/images/mypage.png",
+            "img": "./images/password-gen.png",
+            "desc": "This app creates a password from 8 characters to max 128 characters, It cannot be less than 8 characters or more than 128 characters, then it would not work."
         },
         {
             "id": 3,
             "type": "homework",
             "name": "Note Taker",
             "url": "https://github.com/misterjaykay/note-taker",
-            "img": "./images/note-img.jfif"
+            "img": "./images/note-img.jfif",
+            "screen": "https://github.com/misterjaykay/note-taker/raw/master/public/assets/images/screenshot2.png",
+            "desc": "This app allow users to create and store notes in app for their own use."
         },
         {
             "id": 4,
             "type": "homework",
             "name": "Readme Generator",
             "url": "https://github.com/misterjaykay/good-readme-creator",
-            "img": "./images/readme-img.png"
+            "img": "./images/readme-img.png",
+            "desc": "This app creates a readme file to users to use on their own projects."
         },
         {
             "id": 5,
             "type": "homework",
             "name": "Work Day Scheduler",
             "url": "https://github.com/misterjaykay/work-day-scheduler",
-            "img": "./images/workday.png"
+            "img": "./images/workday.png",
+            "desc": "In this homework, I created an app(page) that give you a full working day scheduler, that user can input what event they have in certain hours during their work hours.",
+            "screen": "https://github.com/misterjaykay/work-day-scheduler/raw/master/assets/mypage.png"
         },
         {
             "id": 6,
             "type": "homework",
             "name": "Weather Dashboard",
             "url": "https://github.com/misterjaykay/weather-dashboard",
-            "img": "./images/weather.png"
+            "img": "./images/weather.png",
+            "desc":"When a user search for a city, It will display current citys weather information along with current date and city's temperature, humidity, wind speed, and UV index.",
+            "screen": "https://github.com/misterjaykay/weather-dashboard/raw/master/assets/images/screenshot.png"
         },
         {
             "id": 7,
             "type": "homework",
             "name": "Timed Quiz",
             "url": "https://github.com/misterjaykay/speed-quiz",
-            "img": "./images/quiz.png"
+            "img": "./images/quiz.png",
+            "desc": "I created a app that generates quiz with choices, and a user needs to pick an correct answer within the set period of time. There is an timer set to 60 seconds, when you click a button to play, timer will start and If you pick a wrong answer, you'll lose five second to your timer. Also, If you get the answer right you will get a point, but if you pick a wrong answer you will lose a point. This quiz game will be over in two condition: when you finish the quiz or when the timer reaches 0. When the quiz is over, you will see a result screen with your score, and you will be able to save your score along with your name onscoreboard."
         },
         {
             "id": 8,

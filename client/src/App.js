@@ -40,7 +40,7 @@ function App() {
             <Route exact path="/project" title={"project"} component={Project} />
             <Route exact path="/contact" title={"contact"} component={Contact} />  
             <Route exact path="/resume" title={"resume"} component={Resume} />
-            <Route exact path="/portfolio/:id" component={Details} />
+            <Route exact path="/portfolio/:id" title={"portfolio"} component={Details} />
           </Switch>
         <Footer />
       </IncompleteContext.Provider>

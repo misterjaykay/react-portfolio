@@ -17,9 +17,9 @@ const comp = useContext(CompleteContext);
             alt={res.name}
           />
           <div className="card-body">
-            <Link to={"/portfolio/" + res.id}>
-              <button className="btn btn-sm btn-primary mb-1">{res.name}</button>
-            </Link>
+            {/* <Link to={"/portfolio/" + res.id}> */}
+              <a href={res.url} target="_blank" rel="noopener noreferrer"><button className="btn btn-sm btn-primary mb-1">{res.name}</button></a>
+            {/* </Link> */}
             <br />
             {(res.deploy) ? (<a href={res.deploy}>
               <button className="btn btn-sm btn-primary mt-1">Deployed Page</button>

@@ -10,14 +10,14 @@ function Details(props) {
 const id = props.match.params.id;
 const context = useContext(DataContext);
 const filter = context.filter(function(e) {
-  return e.id == id;
+  return e.id === id;
 })
 console.log(props);
 console.log(context);
 console.log(filter);
   return (
     <>
-      <Jumbotron title={"portfolio"}/>
+      <Jumbotron title={"Portfolio"}/>
       <Container class={"my-5"}>
         <Row>
           <Col
@@ -28,13 +28,15 @@ console.log(filter);
               size="md-8"
               attr="offset-md-2">
                   <h2>{filter[0].name}</h2>
+                  <hr />
               </Col>
             </Row>
             <Row>
             <Col
               size="md-8"
               attr="offset-md-2">
-                  <img src={filter[0].screen} alt={filter[0].name} />
+                  <img src={filter[0].screen} className="img-fluid" width="100%" alt={filter[0].name} />
+                  <a href={filter[0].url}>Link to Github</a>
                   <p>{filter[0].desc}</p>
                   <hr />
               </Col>
