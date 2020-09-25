@@ -5,7 +5,9 @@
             "type": "homework",
             "name": "Team Profile Generator",
             "url": "https://github.com/misterjaykay/team-profile-generator",
-            "img": "./images/team-profile-card.jpg"
+            "img": "./images/team-profile-card.jpg",
+            "screen": "./screenshots/one.png",
+            "desc": "This app allow users to create a HTML page with each team member cards on it User will decide if user wans to add members or not. The team members have following roles : Manager, Engineer, and, Intern. All of members will have infos such as, Name, Id, and E-mail. Each roles have unique info such as, Office Number, Github Account, Graduated School."
         },
         {
             "id": 2,

@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import DataContext from '../../utils/DataContext';
 
-function Card(props) {
-const { value, attr } = props;
+function CardOne({ attr, value }) {
+const context = useContext(DataContext);
   return (
     <>
-      {value.map((res) => (
+      {(value === "portfolio") ? (context.map((res) => (
         <>
         <div className={`card ${attr}`} key={res.id}>
           <img
@@ -24,9 +25,12 @@ const { value, attr } = props;
           </div>
         </div>
         </>
-      ))}
+      ))) : (
+        <div></div>
+      )}
+      
     </>
   );
 }
 
-export default Card;
+export default CardOne;

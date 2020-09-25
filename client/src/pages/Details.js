@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useContext }  from "react";
+import { useParams } from 'react-router-dom';
 import Jumbotron from '../components/Jumbotron';
 import Container from '../components/Container';
 import Row from '../components/Row';
 import Col from '../components/Col';
+import DataContext from '../utils/DataContext';
 
 function Details(props) {
+const id = props.match.params.id;
+const context = useContext(DataContext);
+const filter = context.filter(function(e) {
+  return e.id == id;
+})
+console.log(props);
+console.log(context);
+console.log(filter);
   return (
     <>
       <Jumbotron title={"portfolio"}/>
@@ -17,18 +27,16 @@ function Details(props) {
               <Col
               size="md-8"
               attr="offset-md-2">
-                  <h2>Portfolio</h2>
-                  <p>Click on each card buttons to browse each source code.</p>
-                  <hr />
+                  <h2>{filter[0].name}</h2>
               </Col>
             </Row>
             <Row>
             <Col
               size="md-8"
               attr="offset-md-2">
-                  <h4>Title</h4>
-                  <p>url</p>
-                  <p>img</p>
+                  <img src={filter[0].screen} alt={filter[0].name} />
+                  <p>{filter[0].desc}</p>
+                  <hr />
               </Col>
             </Row>
           </Col>

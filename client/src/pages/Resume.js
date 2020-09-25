@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from '../components/Container';
 import Jumbotron from "../components/Jumbotron";
 import Row from '../components/Row';
 import Col from '../components/Col';
 
-function Modals(props) {
+function Modals() {
   return (
     <>
     <Jumbotron title={"Resume"} />

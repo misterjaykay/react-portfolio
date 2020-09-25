@@ -1,24 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import Container from '../components/Container';
 import Row from '../components/Row';
 import Col from '../components/Col';
-import Card from '../components/Card';
+import CardTwo from '../components/Card/cardTwo';
 import Jumbotron from "../components/Jumbotron";
 
 export default function Project() {
-    const [doneProj, setDoneProj] = useState([]);
-    const [workingProj, setWorkingProj] = useState([]);
-
-    useEffect(() => {
-        axios.get("./data.json")
-        .then(res => {
-            setDoneProj(res.data.project[0].done)
-            setWorkingProj(res.data.project[1].working)
-        })
-        .catch(err => console.log('error',err));
-    },[])
-    
     return (
         <>
         <Jumbotron title={"Project"} />
@@ -44,15 +31,15 @@ export default function Project() {
                     <Row>
                         <Col
                         size="md-6">      
-                            <Card
+                            <CardTwo
                             attr="my-4 border border-dark bg-light rounded" 
-                            value={doneProj} />
+                            value={'doneProj'} />
                         </Col>
                         <Col 
                         size="md-6">
-                            <Card
+                            <CardTwo
                             attr="my-4 border border-dark rounded" 
-                            value={workingProj} />
+                            value={'workingProj'} />
                         </Col>
                     </Row>
                 </Col>

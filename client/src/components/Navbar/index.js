@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Resume from '../../pages/Resume';
 
 export default function Navbar(props) {
   return (
