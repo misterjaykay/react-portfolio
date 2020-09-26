@@ -1,9 +1,6 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
 import DataContext from '../../utils/DataContext';
-import { useParams } from "react-router-dom";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import Portfolio from "../../pages/Portfolio";
+import { Button } from 'reactstrap';
 import PortfolioModal from '../Modal/';
 
 function CardOne(props) {
@@ -23,13 +20,10 @@ function CardOne(props) {
             alt={res.name}
           />
           <div className="card-body">
-            {/* <Link to={"/portfolio/" + res.id}> */}
             {/* <a href={res.url} target="_blank" rel="noopener noreferrer"> */}
             <Button onClick={() => (setNumber(res.id),toggle())} color="primary" size="sm">{res.name}
             </Button>
             {/* </a> */}
-            {/* </Link> */}
-            {/* <br /> */}
             {/* {(res.deploy) ? (<a href={res.deploy}>
               <button className="btn btn-sm btn-primary mt-1">Deployed Page</button>
             </a>) : (<div/>)} */}
@@ -43,20 +37,16 @@ function CardOne(props) {
             alt={res.name}
           />
           <div className="card-body">
-            {/* <Link to={"/portfolio/" + res.id}> */}
             {/* <a href={res.url} target="_blank" rel="noopener noreferrer"> */}
             <Button onClick={() => (setNumber(res.id),toggle())} color="primary" size="sm">{res.name}
             </Button>
             {/* </a> */}
-            {/* </Link> */}
-            {/* <br /> */}
             {(res.deploy) ? (<a href={res.deploy}>
               <Button color="success" size="sm">Deployed Page</Button>
             </a>) : (<div/>)}
           </div>
         </div>
       ))
-        
       )}
         <PortfolioModal
         toggle={toggle} 
