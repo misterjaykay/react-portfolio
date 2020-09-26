@@ -16,7 +16,7 @@ function Modals() {
             <h2 className="text-center">Resume</h2>
             <hr />
             <div>
-                <embed src="./images/resume/jhk-resume.pdf" width="800px" height="2100px" />
+                <embed className="imgmodal" src="./images/resume/jhk-resume.pdf" width="800px" height="800px" />
             </div>
         </Col>
       </Row>
