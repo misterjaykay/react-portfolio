@@ -11,7 +11,7 @@ export default function About() {
     return (
         <>
         <Jumbotron title={"About Me"} />
-        <Container class={"my-5"}>
+        <Container attr={"my-5"}>
            <Row>
                <Col 
                size="lg-7 md-7"

@@ -1,6 +1,5 @@
 {
-    "list": 
-    [
+    "portfolio": [
         {
             "id": 1,
             "type": "homework",
@@ -68,49 +67,51 @@
             "name": "Refactor Code",
             "url": "https://github.com/misterjaykay/code-refactor",
             "img": "./images/refactor-code.jpg"
+        }
+    ],
+    "project": [
+        {
+            "done": [
+                {
+                    "id": 9,
+                    "type": "project",
+                    "name": "Stock Watch",
+                    "deploy": "https://misterjaykay.github.io/Project-1/",
+                    "url": "https://github.com/misterjaykay/Project-1",
+                    "img": "./images/project-1-logo-rev.png",
+                    "isDone": true
+                },
+                {
+                    "id": 10,
+                    "type": "project",
+                    "name": "Local Grub",
+                    "deploy": "https://localgrub.herokuapp.com/",
+                    "url": "https://github.com/eplatvoet/localgrub",
+                    "img": "./images/localgrublogo-rev.png",
+                    "isDone": true
+                }
+            ]
         },
         {
-            "id": 9,
-            "type": "project",
-            "name": "Stock Watch",
-            "deploy": "https://misterjaykay.github.io/Project-1/",
-            "url": "https://github.com/misterjaykay/Project-1",
-            "img": "./images/project-1-logo-rev.png",
-            "desc": "We wanted to create a Web Application where beginning investors can search and compare stock prices in a clear and concise environment. We wanted to enhance the user experience by adding sections for top stocks and a currency exchange table.",
-            "screen": "https://github.com/misterjaykay/Project-1/raw/master/assets/images/screenshot.png",
-            "isDone": true
-        },
-        {
-            "id": 10,
-            "type": "project",
-            "name": "Local Grub",
-            "deploy": "https://localgrub.herokuapp.com/",
-            "url": "https://github.com/eplatvoet/localgrub",
-            "img": "./images/localgrublogo-rev.png",
-            "screen": "https://raw.githubusercontent.com/eplatvoet/localgrub/master/screenshots/1.png",
-            "screen2": "https://raw.githubusercontent.com/eplatvoet/localgrub/master/screenshots/5.png",
-            "screen3": "https://raw.githubusercontent.com/eplatvoet/localgrub/master/screenshots/7.png",
-            "desc": "Local Grub is an app that utilizes the Zomato & MapQuest API to gather local restaurant information based off of the user's city choice. This app was created to help promote small business throughout local communities, and give users that chance to explore restaurants besides the big chains/franchises.",
-            "isDone": true
-        },
-        {
-            "id": 11,
-            "type": "project",
-            "name": "Discord Bot",
-            "url": "https://github.com/misterjaykay/simple-discord-bot",
-            "img": "./images/discord-logo.png",
-            "isDone": false,
-            "desc": "Simple discord bot for little community needs. It give you random quotes, give you game stats when user requested, replies on certain words."
-
-        },
-        {
-            "id": 12,
-            "type": "project",
-            "name": "Socket.io",
-            "url": "https://github.com/misterjaykay/socket-io",
-            "img": "./images/chat-icon.png",
-            "isDone": false,
-            "desc": "Currently on development phase, an app that you can live chat with other people."
+            "working": [
+                {
+                    "id": 11,
+                    "type": "project",
+                    "name": "Discord Bot",
+                    "url": "https://github.com/misterjaykay/simple-discord-bot",
+                    "img": "./images/discord-logo.png",
+                    "isDone": false
+                },
+                {
+                    "id": 12,
+                    "type": "project",
+                    "name": "Socket.io",
+                    "url": "https://github.com/misterjaykay/socket-io",
+                    "img": "./images/chat-icon.png",
+                    "isDone": false
+                }
+            ]
         }
     ]
+    
 }

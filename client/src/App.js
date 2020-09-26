@@ -21,9 +21,10 @@ function App() {
     useEffect(() => {
         axios.get("./data.json")
         .then(res => {
-            setWork(res.data.portfolio);
-            setDoneProj(res.data.project[0].done);
-            setWorkingProj(res.data.project[1].working);
+            setWork(res.data.list);
+            // setWork(res.data.portfolio);
+            // setDoneProj(res.data.project[0].done);
+            // setWorkingProj(res.data.project[1].working);
         })
         .catch(err => console.log('error',err));
     },[])

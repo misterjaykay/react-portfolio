@@ -9,7 +9,7 @@ export default function Contact() {
     return (
         <>
         <Jumbotron title={"Contact"} />
-        <Container class={"my-5"}>
+        <Container attr={"my-5"}>
             <Row>
                 <Col
                 size="lg-6 md-6 sm-12"

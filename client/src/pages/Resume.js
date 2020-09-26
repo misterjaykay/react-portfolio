@@ -8,7 +8,7 @@ function Modals() {
   return (
     <>
     <Jumbotron title={"Resume"} />
-    <Container class={"my-5"}>
+    <Container attr={"my-5"}>
       <Row>
         <Col
           size="lg-9 md-9 sm-12"

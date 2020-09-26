@@ -47,6 +47,11 @@ header {
   border-radius: 25px;
 }
 
+.imgmodal {
+  max-width:100%;
+  max-height:100%;
+}
+
 .jumbotron {
     padding-top: 200px;
     padding-bottom: 200px;

@@ -18,7 +18,7 @@ console.log(filter);
   return (
     <>
       <Jumbotron title={"Portfolio"}/>
-      <Container class={"my-5"}>
+      <Container attr={"my-5"}>
         <Row>
           <Col
           size="lg-8 md-12"
